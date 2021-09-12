@@ -1,0 +1,7 @@
+
+time: Sun Sep 12 16:45:10 2021
+bedNumber: 1
+time: Sun Sep 12 16:45:43 2021
+bedNumber: 2
+time: Sun Sep 12 16:46:07 2021
+bedNumber: 3
