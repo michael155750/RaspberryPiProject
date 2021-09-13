@@ -1,16 +1,21 @@
-#include "equalizeHistogrames.h"
 
 #include "opticalFlow.h"
 #include <string>
 
 
-int main()
-{
-   
-    for (size_t i = 1; i <= 3; ++i)
-    {
-        std::string num = std::to_string(i);
-        opticalFlow("video_test" + num + ".mp4", "results.txt", "frames" + num, i);
-    }
+
+
     
+    
+    
+
+int main(int argc, char **argv)
+{
+    std::string videoName = argv[1];
+    std::string textFileName = argv[2];
+    std::string imageFolderName = argv[3];
+    std::string bedNumber = argv[4];
+
+    childrenRec(videoName, textFileName, imageFolderName, std::stoi(bedNumber));
+    return 0;
 }
